@@ -5,6 +5,8 @@ import requests
 from termcolor import colored, cprint
 #import stockquote
 
+
+    
 def ltp(symbol,exch):
     base_url = 'https://in.finance.yahoo.com/q?s=' + symbol +'.'+ exch
     content = urllib.urlopen(base_url).read()
@@ -60,8 +62,31 @@ def date(symbol,exch):
 		quote = 'Time updated: ' + m.group(1)
 	else:
 		quote = 'No quote available for: ' + symbol
-	print quote+'\n'
+	print quote
 	return
+	
+def time(symbol,exch):
+	base_url = 'https://in.finance.yahoo.com/q?s=' + symbol +'.'+ exch
+	content = urllib.urlopen(base_url).read()
+	m = re.search('id="yfs_t.*?">(.*?)<', content)
+	print m
+	if m:
+		quote = 'Time Updated: ' + m.group(1)
+	else:
+		quote = 'No quote available for: ' + symbol
+	print quote
+	return
+	
+'''def bse(symbol,exch):
+	base_url = 'https://in.finance.yahoo.com/'
+	content = urllib.urlopen(base_url).read()
+	m = re.search('id="yfs_l84.*>(.*?)<', content)
+	if m:
+		quote = 'BSE: ' + m.group(1)+"\n"
+	else:
+		quote = 'No quote available for: ' + symbol
+	print quote
+	return'''
 	
 def run(nam,exch):
 	ltp(nam,exch)
@@ -69,6 +94,8 @@ def run(nam,exch):
 	changePrice(nam,exch,color)
 	changePerc(nam,exch,color) 
 	date(nam,exch) 
+#	bse(nam,exch)
+	return
 
 ans=raw_input('Want to enter more?\n')
 while ans=='y':
