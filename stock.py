@@ -114,7 +114,7 @@ def run(nam,exch):
 
 print "\n\n\t\t\t\tWelcome!\n\n"
 ans=raw_input('Want to enter data? (Y/N)\n')
-while ans=='y':
+while ans=='y' or ans=='Y':
 	exch = raw_input("\nEnter the exchange (BSE/NSE): ")
 	nam = raw_input("\nEnter the name of the company: ")
 	if exch =='nse' or exch=='ns' or exch=='n':
