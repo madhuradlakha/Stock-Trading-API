@@ -1,0 +1,8 @@
+setup.py
+StockTrader/__init__.py
+StockTrader.egg-info/PKG-INFO
+StockTrader.egg-info/SOURCES.txt
+StockTrader.egg-info/dependency_links.txt
+StockTrader.egg-info/not-zip-safe
+StockTrader.egg-info/top_level.txt
+bin/StockTrader
