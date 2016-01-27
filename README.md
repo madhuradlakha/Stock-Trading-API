@@ -22,5 +22,4 @@ Get to know the value of your stocks on NSE and BSE in just seconds without goin
 <br>``>>BSE: 24,485.95   +50.29   +0.21%``
 <br>``>>NSE: 7,436.15    +13.70    +0.18%``
 
-<img href="http://postimg.org/image/h1dar4nv5/">
-
+![StockTrader](http://postimg.org/image/h1dar4nv5/ "Screenshot of the terminal")
