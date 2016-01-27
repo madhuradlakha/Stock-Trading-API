@@ -1,3 +1,0 @@
-bsesn.*b\sclass="
-\s\s\s\s\s\s	\s\s\s\s\s\s\s\s.*
-\s\s\s\s\s\s\s\s\s\s\s\s">(.*?)<
